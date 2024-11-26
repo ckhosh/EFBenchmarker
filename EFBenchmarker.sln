@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6Context", "EF6Context\EF6Context.csproj", "{6BF46957-3A21-42D1-B0AA-4C1D15AD49DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFBenchmark", "EFBenchmark\EFBenchmark.csproj", "{36117962-F64C-4F14-A687-CB4124023281}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BF46957-3A21-42D1-B0AA-4C1D15AD49DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF46957-3A21-42D1-B0AA-4C1D15AD49DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF46957-3A21-42D1-B0AA-4C1D15AD49DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF46957-3A21-42D1-B0AA-4C1D15AD49DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36117962-F64C-4F14-A687-CB4124023281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36117962-F64C-4F14-A687-CB4124023281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36117962-F64C-4F14-A687-CB4124023281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36117962-F64C-4F14-A687-CB4124023281}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B17D2660-BC4B-4A42-A6A3-3A7E12C9FD09}
+	EndGlobalSection
+EndGlobal
