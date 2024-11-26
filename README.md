@@ -18,7 +18,7 @@
      ```
 
 3. **Tests Performed**  
-   For each connection string, the following tests are performed:
+   For each connection string, the following tests are performed 10 times each:
    - **Simple Book:** Retrieves a list of `Books` from the database.
    - **Book with More Columns:** Retrieves similar data, but with additional extended (empty) columns. 
 
