@@ -1,6 +1,6 @@
 # EFBenchmarker
 
-**EFBenchmarker** is a tool designed to evaluate network card performance by running simple benchmarks on Entity Framework contexts. 
+**EFBenchmarker** is a tool designed to evaluate network card performance with Entity Framework by running simple benchmarks on different contexts. 
 
 ## Usage Instructions
 
