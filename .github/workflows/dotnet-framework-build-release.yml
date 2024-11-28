@@ -38,6 +38,7 @@ jobs:
     - name: Zip the Release Folder
       run: |
         powershell Compress-Archive -Path $env:Project_Directory\bin\Release\* -DestinationPath ("$env:Project_Directory" + ".zip")
+        dir
 
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v3
