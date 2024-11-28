@@ -29,7 +29,7 @@ jobs:
 
     # Restore Nuget packages
     - name: Restore NuGet packages
-      run: nuget restore YourSolution.sln
+      run: nuget restore $env:Solution_Name
 
     # Build
     - name: Build the solution
