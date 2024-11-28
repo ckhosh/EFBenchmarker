@@ -16,6 +16,7 @@ jobs:
     env:
       Solution_Name: EFBenchmarker.sln                       # Replace with your solution name, i.e. MyWpfApp.sln.
       Project_Directory: EFBenchmark    # Replace with the project directory relative to the solution, i.e. MyWpfApp.Package.
+      ACTIONS_STEP_DEBUG: true 
 
     steps:
     - name: Checkout
@@ -47,6 +48,6 @@ jobs:
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: $env:Project_Directory
+        name: ${{ env:Project_Directory }}
         path: EFBenchmark.zip
 
