@@ -48,6 +48,6 @@ jobs:
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ env:Project_Directory }}
+        name: EFBenchmark
         path: EFBenchmark.zip
 
