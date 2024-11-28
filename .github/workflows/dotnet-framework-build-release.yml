@@ -40,9 +40,13 @@ jobs:
         powershell Compress-Archive -Path $env:Project_Directory\bin\Release\* -DestinationPath ("$env:Project_Directory" + ".zip")
         dir
 
+    - name: Simple test
+      run: |
+        dir
+
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v3
       with:
         name: $env:Project_Directory
-        path: ${{ env.Project_Directory }}.zip 
+        path: EFBenchmark.zip
 
