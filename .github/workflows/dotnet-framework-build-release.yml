@@ -27,10 +27,13 @@ jobs:
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v2
 
+    # Restore Nuget packages
+    - name: Restore NuGet packages
+      run: nuget restore YourSolution.sln
 
-    # Restore the application to populate the obj folder with RuntimeIdentifiers
-    - name: Restore and build the solution
-      run: msbuild $env:Solution_Name /t:Restore /p:Configuration=Release
+    # Build
+    - name: Build the solution
+      run: msbuild $env:Solution_Name /p:Configuration=Release
 
     - name: Zip the Release Folder
       run: |
