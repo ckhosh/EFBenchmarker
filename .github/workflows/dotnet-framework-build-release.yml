@@ -39,7 +39,7 @@ jobs:
       run: nuget restore $env:Solution_Name
 
     - name: Restore dependencies for .NET
-      run: dotnet restore $env:Solution_Name
+      run: dotnet restore SQLBenchmark\SQLBenchmark.csproj
 
     # Build
     - name: Build the EFBenchmark
@@ -47,7 +47,7 @@ jobs:
 
     # Build
     - name: Build the SQLBenchmark
-      run: dotnet build SQLBenchmark\SQLBenchmark.csproj --configuration Release --no-restore
+      run: dotnet build SQLBenchmark\SQLBenchmark.csproj --configuration Release
       
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
