@@ -36,18 +36,15 @@ jobs:
     - name: Build the solution
       run: msbuild $env:Solution_Name /p:Configuration=Release
 
-    - name: Zip the Release Folder
-      run: |
-        powershell Compress-Archive -Path $env:Project_Directory\bin\Release\* -DestinationPath ("$env:Project_Directory" + ".zip")
-        dir
-
-    - name: Simple test
-      run: |
-        dir
-
     - name: Upload Build Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: EFBenchmark
-        path: EFBenchmark.zip
+        path: EFBenchmark\bin\Release\
+
+    - name: Upload Build Artifact SQL Benchmark
+      uses: actions/upload-artifact@v4
+      with:
+        name: SQLBenchmark
+        path: SQLBenchmark\bin\Release\
 
