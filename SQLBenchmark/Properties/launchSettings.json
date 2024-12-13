@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SQLBenchmark": {
+      "commandName": "Project",
+      "commandLineArgs": "SurfacePro10 SurfaceGo3"
+    }
+  }
+}
