@@ -38,8 +38,8 @@ jobs:
     - name: Restore NuGet packages
       run: nuget restore $env:Solution_Name
 
-    - name: Restore NuGet packages
-      run: nuget restore $env:Solution_Name
+    - name: Restore dependencies for .NET
+      run: dotnet restore $env:Solution_Name
 
     # Build
     - name: Build the EFBenchmark
