@@ -1,3 +1,17 @@
+# SimpleSqlTest
+
+1. **Setup Test Database**
+   Either use docker desktop and the docker-compose file to setup the sql container or setup sql server manually and use the init.sql file in the DockerSqlSetup/init folder.
+
+1. **Configure Connection Strings**  
+   Edit the `SimpleSqlTest.exe.config` file to include the connection string for the benchmark database you intend to test.
+
+2. **Run the Test**
+   Execute `SimpleSqlTest.exe` from the command line with the name of the connection string you want to test. (e.g., .\SimpleSqlTest.exe SurfaceGo4)
+
+
+
+   
 # EFBenchmarker
 
 **EFBenchmarker** is a tool designed to evaluate network card performance with Entity Framework by running simple benchmarks on different contexts. 
