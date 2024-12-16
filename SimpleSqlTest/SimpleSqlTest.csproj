@@ -49,6 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="DockerSqlSetup\docker-compose.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DockerSqlSetup\init\init.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
